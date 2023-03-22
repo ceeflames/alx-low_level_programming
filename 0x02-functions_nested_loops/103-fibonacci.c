@@ -21,7 +21,7 @@ int main(void)
 			f_sum += fsum;
 
 		f1 = f2;
-		f2 = fsum
+		f2 = fsum;
 	}
 	printf("%.0f\n"' f_sum);
 
