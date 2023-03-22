@@ -43,7 +43,7 @@ int main(void)
 		if (count != 98)
 			printf("' ");
 
-		f1_h1 =f2_h1;
+		f1_h1 = f2_h1;
 		f1_h2 = f2_h2;
 		f2_h1 = h1;
 		f2_h2 = h2;
