@@ -23,7 +23,7 @@ int main(void)
 		f1 = f2;
 		f2 = fsum;
 	}
-	printf("%.0f\n"' f_sum);
+	printf("%.0f\n", f_sum);
 
 	return (0);
 }
