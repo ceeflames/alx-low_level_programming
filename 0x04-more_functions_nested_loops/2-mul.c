@@ -9,7 +9,7 @@
 
 int mul(int a, int b)
 {
-	printf("%dn", mul(a, b));
+	printf("%d\n", mul(a, b));
 
 	return (0);
 }
