@@ -2,6 +2,7 @@
 
 /**
  * print_numbers - print numbers
+ * @c:
  * Return: void
  */
 
