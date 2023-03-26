@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_number - check the code
+ * @n: parameter
  * Return: Alwauys 0.
  */
 
@@ -20,6 +20,6 @@ void print_number(int n)
 		print_number(c / 10);
 	}
 	_putchar(c % 10 + '0');
-
+	return (0);
 }
 
