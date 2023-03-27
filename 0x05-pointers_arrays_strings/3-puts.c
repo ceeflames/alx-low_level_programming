@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _puts - Prints a string
- *
+ * @str: for betty
  * Return: Always 0.
  */
 void _puts(char *str)
