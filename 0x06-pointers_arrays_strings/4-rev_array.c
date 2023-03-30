@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * reverse_array - function for reversing arrays
- *
+ * @n: index numbers
+ * @a: pointer to a
  * Return: 0.
  */
 void reverse_array(int *a, int n)
