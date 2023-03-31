@@ -6,7 +6,7 @@
  * @s: lenght of strings
  * Return: s.
  */
- char *string_toupper(char *s)
+char *string_toupper(char *s)
 {
 	int len = 0;
 
