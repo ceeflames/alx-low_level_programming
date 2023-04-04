@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		if (s[x] != 31)
+		if (s[x] != 32)
 		{
 			for (y = 0; accept[y] != '\0'; y++)
 			{
