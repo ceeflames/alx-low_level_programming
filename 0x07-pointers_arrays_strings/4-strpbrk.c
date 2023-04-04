@@ -4,7 +4,6 @@
  * of a set of bytes.
  * @s: constant
  * @accept: constant
- * @t: temp variable
  * Return: s.
  */
 char *_strpbrk(char *s, char *accept)
@@ -16,10 +15,10 @@ char *_strpbrk(char *s, char *accept)
 		return ('\0');
 	}
 
-
 	while (*s != '\0')
 	{
 		t = accept;
+
 		while (*t != '\0')
 		{
 			if (*s == *t)
