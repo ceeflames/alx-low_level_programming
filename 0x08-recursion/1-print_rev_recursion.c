@@ -10,10 +10,6 @@ void _print_rev_recursion(char *s)
 
 	n = 0;
 
-	if (s[n] == "")
-	{
-		return (0);
-	}
 	while (s[n] != '\0')
 	{
 		n++;
