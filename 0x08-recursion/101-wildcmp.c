@@ -28,12 +28,12 @@ int str_checker(char *s1, char *s2, int i, int j)
 }
 
 /**
- * wildcamp - checking for identical string
+ * wildcmp - checking for identical string
  * @s1: string base address
  * @s2: string base address
  * Return: 1;
  */
-int wildcamp(char *s1, char *s2)
+int wildcmp(char *s1, char *s2)
 {
 	return (str_checker(s1, s2, 0, 0));
 }
