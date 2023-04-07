@@ -33,6 +33,7 @@ int palindrome_checker(char *s, int i, int j)
 		{
 			return (palindrome_checker(s, i + 1, j - 1));
 		}
+	}
 	else
 	{
 		return (0);
