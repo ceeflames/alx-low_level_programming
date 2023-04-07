@@ -5,15 +5,8 @@
  *  @n: integer
  *  Return: square root
  */
-int _sqrt_recursion(int n)
-{
-	if (n == 0)
-	{
-		return (0);
-	}
-	return (test(1, n));
 
-}
+
 /**
  * test - function to check the square root
  * @a: integer
@@ -27,4 +20,13 @@ int test(int a, int b)
 	if (a * a > b)
 		return (-1);
 	return (test(a + 1, b));
+}
+int _sqrt_recursion(int n)
+{
+        if (n == 0)
+        {
+                return (0);
+        }
+        return (test(1, n));
+
 }
