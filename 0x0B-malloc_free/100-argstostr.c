@@ -30,9 +30,11 @@ char *argstostr(int ac, char **av)
 		p = av[i];
 		k = 0;
 		while (p[k])
+		{
 			ptr[j] = p[k];
 			k++;
 			j++;
+		}
 		ptr[j++] = '\n';
 	}
 	ptr[j] = '\0';
