@@ -4,14 +4,16 @@
  * array_iterator - function that executes function given
  * as a parameter on each element of an array
  * @size: size of the array
+ * @array: pointer to array
  * @action: pointer to the function
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
-	
-	for (i = 0; array[i]; i++);
-	action(array[i]);
-		
+	size_t i;
+
+	for (i = 0; i < size; i++)
+	{
+		action(array[i]);
+	}
 }
