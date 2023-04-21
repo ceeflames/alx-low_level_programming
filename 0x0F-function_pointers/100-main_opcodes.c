@@ -1,4 +1,3 @@
-#include "3-main.c"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -36,12 +35,12 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(1);
 	}
-	i = atoi(argc[1]);
+	i = atoi(argv[1]);
 	if (i < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	print_opcodes((char *)&main, n);
+	print_opcodes((char *)&main, i);
 	return (0);
 }
