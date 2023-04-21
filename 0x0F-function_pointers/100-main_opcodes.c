@@ -2,7 +2,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_opcodes
+ * print_opcodes - function that prints opcodes
+ * @a: address
+ * @n: number
+ * Return: void
+ */
+
+void print_opcodes(char *a, int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%x", a[i]);
+		if (i < n - 1)
+			printf(" ");
+	}
+	printf("\n");
+}
+
 /**
  * main - prints the opcodes of its own main function
  * @argc: argument count
