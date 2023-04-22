@@ -1,6 +1,4 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
 
 /**
  * print_char -func to print char
@@ -38,8 +36,9 @@ void print_string(va_list p)
 
 	c = va_arg(p, char *);
 	if (c == NULL)
-		c = "(nil)";
-	printf("%s", c);
+		printf("(nil)");
+	else
+		printf("%s", c);
 }
 /**
  * print_all - function that prints anything
@@ -48,7 +47,6 @@ void print_string(va_list p)
  */
 void print_all(const char * const format, ...)
 {
-	char *str;
 	unsigned int i = 0, j;
 	va_list p;
 	
@@ -60,17 +58,21 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 	va_start(p, format);
-	while (format != NULL && format[i])
+	while (format && format[i])
 	{
-		if (forms[i].formats[0] == format[i])
+		j = 0;
+		while (forms[j].formats)
 		{
-			printf("%s", str);
-			forms[j].f(p);
-			str = ", ";
+			if (format[i] == *(forms[j].formats))
+			{
+				forms[j].f(p);
+				break;
+			}
 			j++;
 		}
 		i++;
 	}
+
 	printf("\n");
 	va_end(p);
 }
