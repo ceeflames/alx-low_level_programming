@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 {
 	unsigned int i = 0, j;
 	va_list p;
-	
+
 	form forms[] = {
 		{"c", print_char},
 		{"i", print_int},
