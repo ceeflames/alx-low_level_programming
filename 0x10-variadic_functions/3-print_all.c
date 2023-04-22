@@ -59,7 +59,6 @@ void print_all(const char * const format, ...)
 	{
 		if (forms[i].formats[0] == format[i])
 		{
-			printf("%s", str);
 			forms[j].f(p);
 			j++;
 		}
