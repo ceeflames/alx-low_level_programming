@@ -47,6 +47,7 @@ void print_string(va_list p)
  */
 void print_all(const char * const format, ...)
 {
+	char *str;
 	unsigned int i = 0, j;
 	va_list p;
 
@@ -57,6 +58,7 @@ void print_all(const char * const format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
+	str = ", ";
 	va_start(p, format);
 	while (format && format[i])
 	{
@@ -65,6 +67,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *(forms[j].formats))
 			{
+				printf("%s", str);
 				forms[j].f(p);
 				break;
 			}
