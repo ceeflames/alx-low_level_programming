@@ -37,7 +37,7 @@ void print_string(va_list p)
 	c = va_arg(p, char *);
 	if (c == NULL)
 		c = "(nil)";
-		printf("%s", c);
+	printf("%s", c);
 }
 /**
  * print_all - function that prints anything
