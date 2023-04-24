@@ -13,6 +13,12 @@ void print_char(va_list p);
 void print_int(va_list p);
 void print_float(va_list p);
 void print_string(va_list p);
+/**
+ * struct form_t - structure initialized to
+ * typedef form
+ * @formats: character pointer
+ * @f: function pointer
+ */
 
 typedef struct form_t
 {
