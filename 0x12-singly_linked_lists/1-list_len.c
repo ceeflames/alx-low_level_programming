@@ -9,5 +9,12 @@
  */
 size_t list_len(const list_t *h)
 {
+	int Numbernode = 0;
 
+	while (h)
+	{
+		Numbernode++;
+		h = h->next;
+	}
+	return (Numbernode);
 }
