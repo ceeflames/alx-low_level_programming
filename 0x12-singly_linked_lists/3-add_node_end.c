@@ -5,18 +5,23 @@
  * strlen_ - function to find the length of str
  * @str: string
  *
- * return: len
+ * Return: 0 Always
  */
 unsigned int strlen_(char *str)
 {
 	unsigned int i;
+
 	for (i = 0; str[i]; i++);
+	
+	
 	return (i);
 }
 
 /**
  * *add_node_end - Function that adds a new node at
  * the end of the list.
+ * @head: begining of the node
+ * @str: string
  *
  * Return: Address of n || NULL (failure)
  */
