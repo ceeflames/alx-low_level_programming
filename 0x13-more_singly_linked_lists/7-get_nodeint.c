@@ -2,8 +2,8 @@
 
 /**
  * *get_nodeint_at_index - function that returns the nth node
- * @head:
- * @index:
+ * @head: pointer to the list
+ * @index: index to iterate through with
  *
  * Return: NULL if node don't exist
  */
