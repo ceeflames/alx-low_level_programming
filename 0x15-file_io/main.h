@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAXSIZE 1024
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
