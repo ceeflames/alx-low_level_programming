@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	while (st1 > 0)
+	while (st1 > 0);
 	{
 		st1 = close(fd1);
 		if (st1 == -1)
