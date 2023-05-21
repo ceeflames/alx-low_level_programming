@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	char buffer[MAXSIZE];
 	mode_t mode;
 
-	mode = S_IRUSR | S_IWUSR | S_IWGRP | S_IROTH;
+	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file _to\n");
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	fd2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
+	fd2 = open(argv[2],O_WRONLY | O_CREAT | O_TRUNC, mode);
 	if (fd2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
