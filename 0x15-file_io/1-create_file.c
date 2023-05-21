@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 	if (fildes == -1)
 		return (-1);
 
-	if (text_content != NULL)
+	if (text_content)
 	{
 		for (i = 0; text_content[i] != '\0'; i++)
 			;
