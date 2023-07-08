@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint - converts binary to unsigned int
- * @b - str where the binary number is
+ * @b: str where the binary number is
  *
  * Return: the converted value
  */
