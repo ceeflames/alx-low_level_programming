@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * ssize_t read_textfile - Function that reads a text file and prints
+ * read_textfile - Function that reads a text file and prints
  * it to the POSIX standard output
  * @filename: pointer to the file to read
  * @letters: Number of letters to read and print
