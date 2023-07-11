@@ -35,6 +35,7 @@ void close_file(int fildes)
 	if (cl == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fildes);
+		exit(100);
 	}
 }
 
