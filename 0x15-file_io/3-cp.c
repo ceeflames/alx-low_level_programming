@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _createbuffer - allocates bytes 
+ * _createbuffer - allocates bytes
  * @file: file name
  *
  * Return: ptr to allocated buffer
@@ -76,6 +76,7 @@ int main(int argc, char *argv[])
 		rd = read(i, buff, 1024);
 		j = open(argv[2], O_WRONLY | O_APPEND);
 	}
+
 	while (rd > 0);
 
 	free(buff);
