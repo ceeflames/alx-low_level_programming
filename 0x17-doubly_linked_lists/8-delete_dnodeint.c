@@ -2,7 +2,7 @@
 /**
  * delete_dnodeint_at_index - deletes the node at index of a linked list
  * @head: ptr to the file
- * index: index
+ * @index: index
  *
  * Return: 1 (successful) || -1 (failure)
  */
