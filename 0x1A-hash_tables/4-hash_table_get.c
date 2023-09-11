@@ -4,7 +4,7 @@
  * @ht: hash table to look into
  * @key: they key
  *
- * Returns: key or NULL if key is not found
+ * Return: key or NULL if key is not found
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -14,18 +14,17 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht == NULL || *key == 48 || key == NULL)
 		return (NULL);
 
-	idx = key_index((const unsigned char *)key, ht->size);
-	if (idx >= ht->size)
-		return (NULL);
-
-	for (curr_node = ht->array[idx]; curr_node && strcmp(curr_node->key, key) != 0; curr_node = curr_node->next);
-
-	if (curr_node == NULL)
+	if (ht && key && *key)
 	{
-		return (NULL);
+		idx = key_index((const unsigned char *)key, ht->size);
+		curr_node = ht->array[idx];
+
+		while (curr_node)
+		{
+			if (!strcmp(curr_node->key, key))
+				return (curr_node->value);
+			curr_node = curr_node->next;
+		}
 	}
-	else
-	{
-		return (curr_node->value);
-	}
+	return (NULL);
 }
