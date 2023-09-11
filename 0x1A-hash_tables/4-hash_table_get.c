@@ -18,10 +18,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (idx >= ht->size)
 		return (NULL);
 
-	for (curr_node = ht->array[idx];
-			curr_node && strcmp(curr_node->key, key) != 0;
-			curr_node = curr_node->next)
-		;
+	for (curr_node = ht->array[idx]; curr_node && strcmp(curr_node->key, key) != 0; curr_node = curr_node->next);
+
 	if (curr_node == NULL)
 	{
 		return (NULL);
